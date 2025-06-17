@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "with = device-with,inicial-scale = 1.0">
+        <title> PINTURAS </title> 
+    </head>
+
+        <body>
+
+            <header>
+
+                <h1> PINTURAS </h1>
+
+                <div id = "buttons">
+        
+                    <a href = "#" class = "button-primary" id = "btn-del-first"> Eliminar 1º Cuadro </a>
+                    <a href = "#" class = "button-primary" id = "btn-del-second"> Eliminar 2º cuadro </a>
+                    <a href = "#" class = "button-primary" id = "btn-del-all"> Eliminar los dos Cuadros </a>
+                    <a href = "#" class = "button-primary" id = "btn-move"> Mover </a>
+
+                </div> 
+
+            </header>
+
+    <div id = "main-content">
+
+        <img id = "image-left" src = "images/mar.jpg">
+        <img id = "image- right" src = "images/membrillos.jpg">
+
+    </div>
+
+<script>
+    var btn;
+
+    btn = document.getElementById ("btn-move");
+
+    btn. addEventListener ("click",function moveImages(){
+
+        var imageleft;
+        var imageright;
+        var temp;
+
+        imageleft = document.getElementById ("image-left").src;
+        imageright = document.getElementById ("image-right").src;
+        temp = imageleft;
+
+        document.getElementById ("image-left").src = imageright;
+        document.getElementById ("image-right").src = temp;
+        
+
+        
+
+
+
+ }
+    )
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+    
+
+            
+
+
+    
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
